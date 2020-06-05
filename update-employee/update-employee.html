@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Update Employee Information:</title>
+
+	<style>
+
+
+h1{
+margin-top: 0;
+height: 50px;
+color: purple;
+}
+
+
+label {
+display: block;
+font-family: Times New Roman;
+margin-left: 50px;
+}
+
+input {
+width: 100px;
+margin-left: 50px;
+}
+
+button {
+width: 100px;
+margin-top: 20px;
+background: #b2ad7f;
+}
+
+
+</style>
+</head>
+
+<body>
+
+
+
+<h1>Update Employee Information:</h1>
+
+<!-- {{ employee }} -->
+
+<div id="main">
+<label>Enter employee ID  :  </label><input type="text" ng-model="id"> <br>
+<label>Enter employee name: </label><input type="text" ng-model="name"> <br>
+<label>Enter employee DOB : </label><input type="text" ng-model="dob"> <br>
+<label>Enter salary ID    : </label><input type="text" ng-model="salaryId"> <br>
+
+<br>
+</div>
+
+<button ng-click="buttonPressed(id, name, dob, salaryId)">Submit</button>
+
+</body>
+</html>
